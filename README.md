@@ -50,6 +50,10 @@ release\PrismaraAI.exe
 
 `dist/` and any `prismara/` or legacy `mlmae/` folders are build/runtime artifacts and must not be published as source.
 
+## Contributing
+
+Contributions are welcome through issues and pull requests. Please read `CONTRIBUTING.md`, use the GitHub issue templates, and keep secrets, runtime data, logs, model weights, and local state out of commits.
+
 ## Source Layout
 
 - `launcher.py` - portable exe launcher and local server bootstrap.
