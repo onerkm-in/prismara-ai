@@ -2,7 +2,30 @@
 
 ![Prismara AI logo](frontend/public/prismara-logo.svg)
 
-Prismara AI is a local-first multi-model agent workspace. The packaged Windows app is intended to run as a portable `PrismaraAI.exe`: users place the exe in a folder, launch it, and the app creates a sibling `prismara/` runtime folder for encrypted local state, chat history, logs, backups, credentials, and local model storage.
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+[![Status: early alpha](https://img.shields.io/badge/status-early%20alpha-f59e0b.svg)](#project-status)
+[![Local-first](https://img.shields.io/badge/local--first-privacy%20by%20default-14b8a6.svg)](#trust-model)
+
+Prismara AI is a local-first multi-model agent workspace for people who want AI help without giving up control of their data.
+
+It is being built as both:
+
+- A portable desktop app for private local use.
+- A future hosted web option for teams, remote access, and managed deployment.
+
+## Why Prismara AI?
+
+- Local-first by default: state, credentials, memory, logs, and local models stay on the user's machine.
+- Multi-model orchestration: Prismara AI routes work through a role-based agent pipeline instead of depending on one model.
+- Explicit online consent: cloud providers are used only when enabled for a request or configured in admin integrations.
+- Portable Windows packaging: the end-user app is intended to run as a self-contained `PrismaraAI.exe`.
+- Open roadmap: desktop and web deployment paths are both planned.
+
+## Project Status
+
+Prismara AI is in early public alpha. The desktop-first local runtime is the current focus. Hosted web deployment, pricing, and platform options are being evaluated next.
+
+Helpful early contributions include setup testing, Windows packaging feedback, Ollama/runtime detection improvements, UI polish, documentation, and hosting architecture ideas.
 
 ## Portable Runtime
 
@@ -50,9 +73,40 @@ release\PrismaraAI.exe
 
 `dist/` and any `prismara/` or legacy `mlmae/` folders are build/runtime artifacts and must not be published as source.
 
+## Quick Start For Contributors
+
+Clone the repo, install dependencies, then build the frontend:
+
+```bat
+python -m pip install -r requirements.txt
+cd frontend
+npm install
+npm run build
+```
+
+For full packaging on Windows:
+
+```bat
+build.bat
+```
+
 ## Contributing
 
 Contributions are welcome through issues and pull requests. Please read `CONTRIBUTING.md`, use the GitHub issue templates, and keep secrets, runtime data, logs, model weights, and local state out of commits.
+
+Good first places to help:
+
+- Try the app on a Windows machine and report setup friction.
+- Test local model recommendations with different RAM/GPU configurations.
+- Improve copy, screenshots, docs, or onboarding.
+- Help shape the hosted web architecture.
+- Pick an item from `ROADMAP.md`.
+
+## Visibility And Feedback
+
+If Prismara AI is useful or interesting, please star the repo, open an issue with feedback, or share a setup report. Even small notes like "this worked on my machine" are useful while the project is early.
+
+For launch copy, outreach ideas, and metrics to track, see `LAUNCH_KIT.md`.
 
 ## Source Layout
 
