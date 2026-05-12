@@ -1,0 +1,24 @@
+# ── Core runtime ──────────────────────────────────────────────────────────────
+flask>=3.0
+flask-cors>=4.0
+waitress>=3.0
+
+# ── LLM providers ─────────────────────────────────────────────────────────────
+openai>=1.30
+anthropic>=0.25
+google-genai>=1.0
+google-auth>=2.29
+google-cloud-storage>=2.17
+groq>=0.9
+cohere>=5.0
+
+# Note: langchain/langgraph were dropped on 2026-05-10. The new role pipeline
+# in src/orchestrator.py calls src.llm_client directly — no orchestration
+# framework needed. Removing them shrinks the packaged exe by ~120 MB.
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv>=1.0
+requests>=2.31
+
+# ── Packaging (build-time only) ───────────────────────────────────────────────
+pyinstaller>=6.6

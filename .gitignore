@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Node / frontend
+node_modules/
+frontend/node_modules/
+server/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build and packaged artifacts
+build/
+dist/
+release/
+frontend/dist/
+*.spec.bak
+*.exe
+*.pkg
+*.toc
+*.pyz
+*.zip
+
+# Local production runtime data
+mlmae/
+prismara/
+MLMAE_Data/
+PrismaraAI_Data/
+logs/
+frontend/mlmae/
+frontend/prismara/
+neural_memory.json
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+credentials.json
+config.json
+custom_models.json
+chat_history.json
+sso_tokens.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local backups and caches
+backups/
+cache/
+.tmp*/
+*.bak
+*.bak.json
+*.log
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
