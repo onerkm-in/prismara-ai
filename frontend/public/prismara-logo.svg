@@ -1,0 +1,57 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Prismara AI logo">
+  <defs>
+    <linearGradient id="bg" x1="18" y1="12" x2="112" y2="118" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="0.55" stop-color="#102C34"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="20" y1="18" x2="108" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67E8F9"/>
+      <stop offset="0.38" stop-color="#2DD4BF"/>
+      <stop offset="0.7" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#FDE68A"/>
+    </linearGradient>
+    <linearGradient id="coreA" x1="38" y1="35" x2="84" y2="96" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ECFEFF"/>
+      <stop offset="0.45" stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="coreB" x1="60" y1="28" x2="97" y2="97" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0FDFA"/>
+      <stop offset="0.5" stop-color="#2DD4BF"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+    <linearGradient id="coreC" x1="48" y1="42" x2="76" y2="104" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5D0FE"/>
+      <stop offset="0.55" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+    <filter id="glow" x="-28" y="-28" width="184" height="184" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.18 0 0 0 0 0.83 0 0 0 0 0.76 0 0 0 0.55 0"/>
+      <feBlend in2="SourceGraphic" mode="screen"/>
+    </filter>
+  </defs>
+
+  <rect x="8" y="8" width="112" height="112" rx="26" fill="url(#bg)"/>
+  <rect x="9.5" y="9.5" width="109" height="109" rx="24.5" stroke="url(#rim)" stroke-opacity="0.72" stroke-width="3"/>
+
+  <g opacity="0.88" filter="url(#glow)">
+    <path d="M24 70L47 60L58 64L33 83L24 70Z" fill="#67E8F9" fill-opacity="0.52"/>
+    <path d="M104 44L82 57L71 54L96 34L104 44Z" fill="#FDE68A" fill-opacity="0.5"/>
+    <path d="M99 88L79 75L84 66L108 80L99 88Z" fill="#A78BFA" fill-opacity="0.46"/>
+  </g>
+
+  <g filter="url(#glow)">
+    <path d="M64 24L92 50L80 93H48L36 50L64 24Z" fill="#0B1220" fill-opacity="0.7"/>
+    <path d="M64 24L92 50L64 62L36 50L64 24Z" fill="url(#coreB)"/>
+    <path d="M36 50L64 62L48 93L36 50Z" fill="url(#coreA)"/>
+    <path d="M92 50L64 62L80 93L92 50Z" fill="url(#coreC)"/>
+    <path d="M64 62L80 93H48L64 62Z" fill="#E0F2FE" fill-opacity="0.82"/>
+    <path d="M64 24L64 62M36 50L92 50M48 93L64 62L80 93" stroke="#F8FAFC" stroke-opacity="0.52" stroke-width="2.1" stroke-linejoin="round"/>
+    <path d="M64 24L92 50L80 93H48L36 50L64 24Z" stroke="#F8FAFC" stroke-opacity="0.72" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+
+  <circle cx="64" cy="62" r="5.2" fill="#F8FAFC"/>
+  <circle cx="64" cy="62" r="2.3" fill="#0F172A"/>
+</svg>

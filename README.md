@@ -1,5 +1,7 @@
 # Prismara AI
 
+![Prismara AI logo](frontend/public/prismara-logo.svg)
+
 Prismara AI is a local-first multi-model agent workspace. The packaged Windows app is intended to run as a portable `PrismaraAI.exe`: users place the exe in a folder, launch it, and the app creates a sibling `prismara/` runtime folder for encrypted local state, chat history, logs, backups, credentials, and local model storage.
 
 ## Portable Runtime

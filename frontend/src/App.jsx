@@ -1424,7 +1424,9 @@ function App() {
       <div className="app-container">
         <header className="topbar">
           <div className="brand-lockup">
-            <div className="brand-mark"><Sparkles size={20} /></div>
+            <div className="brand-mark">
+              <img src="/prismara-logo.svg" alt="" aria-hidden="true" />
+            </div>
             <div>
               <h1>Prismara AI</h1>
               <p>Local-first agent workbench</p>
